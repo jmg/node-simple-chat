@@ -2,12 +2,13 @@
 
 ------------------------------------------------------------------
 
-### Setup your Chat Room
+## Setup your Chat Room
 
 ------------------------------------------------------------------
 
-Install node-js. Just follow this guide https://github.com/joyent/node/wiki/Installation.
-Install the Node Pacakge Manager (NPM). Read this https://github.com/isaacs/npm. 
+To Install node-js just follow this guide https://github.com/joyent/node/wiki/Installation.
+
+Then you need to Install the Node Pacakge Manager (NPM). Read this guide https://github.com/isaacs/npm. 
 
 ------------------------------------------------------------------
 
