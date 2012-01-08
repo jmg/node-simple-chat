@@ -1,0 +1,15 @@
+#msgs {
+  height: 300px;
+  background: #f3f3ff;
+  font-family: monospace, sans; 
+  overflow:auto;
+}
+
+.chat-title {
+  color: white;
+  background: #a2a2ee;
+  font-weight: bold;
+  font-size: 20px;
+  height: 24px;
+  padding: 2px;
+}
