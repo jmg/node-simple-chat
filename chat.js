@@ -8,6 +8,7 @@ var server = http.createServer()
 server.listen(PORT)
 
 var io = require('socket.io').listen(server)
+io.set ('transports', ['xhr-polling', 'jsonp-polling'])
 
 var messages = new Array()
 

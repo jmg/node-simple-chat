@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>  
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
     <script src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.7.1.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -43,7 +43,7 @@
         <p class="chat-title" onclick="javascript: toggleChat();">Real Time Chat</p>
         <div id="msgs"></div>
         <div id="form">
-          <form id="chat" action="javascript:sendMsg()">
+            <form id="chat" onsubmit="sendMsg(); return false;">
                 <label for="username">Username: </label><input name="username" type="text"><br/>
                 <label for="msg"> Message: </label><input id="msg" type="text" name="message"/><br/>
                 <input type="submit"/>
