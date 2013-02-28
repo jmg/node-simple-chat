@@ -1,5 +1,5 @@
 var DEBUG = true
-var PORT = 3000
+var PORT = process.env.PORT || 3000
 var INIT_MESSAGES = 5
 
 var http = require('http')
