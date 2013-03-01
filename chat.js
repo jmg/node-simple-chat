@@ -1,7 +1,7 @@
 var DEBUG = true
 var PORT = process.env.PORT || 3000
 var INIT_MESSAGES = 5
-var APP_NAME = "http://peaceful-hamlet-4616.herokuapp.com"
+var APP_NAME = "peaceful-hamlet-4616.herokuapp.com"
 
 /*
     Express web app
