@@ -1,13 +1,32 @@
 var DEBUG = true
 var PORT = process.env.PORT || 3000
+var HOST = process.env.HOST || "localhost"
 var INIT_MESSAGES = 5
 
-var http = require('http')
+/*
+    Express web app
+*/
 
-var server = http.createServer()
-server.listen(PORT)
+var express = require('express')
 
-var io = require('socket.io').listen(server)
+var app = express.createServer(express.logger())
+app.set('views', __dirname)
+app.set("view options", {layout: false});
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+    response.render("chat", {"PORT": PORT, "HOST": HOST})
+})
+
+app.listen(PORT, function() {
+    console.log("Listening on " + PORT)
+})
+
+/*
+    Socket.io server
+*/
+
+var io = require('socket.io').listen(app)
 io.set ('transports', ['xhr-polling', 'jsonp-polling'])
 
 var messages = new Array()

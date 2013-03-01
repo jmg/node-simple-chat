@@ -2,7 +2,9 @@
   "name": "node-example",
   "version": "0.0.1",
   "dependencies": {
-    "socket.io": "0.9.5"
+    "socket.io": "0.9.5",
+    "express": "2.5.x",
+    "ejs": "x.x.x"
   },
   "engines": {
     "node": "0.8.x",
