@@ -1,7 +1,7 @@
 var DEBUG = true
 var PORT = process.env.PORT || 3000
-var HOST = process.env.HOST || "localhost"
 var INIT_MESSAGES = 5
+var APP_NAME = "http://peaceful-hamlet-4616.herokuapp.com"
 
 /*
     Express web app
@@ -15,7 +15,7 @@ app.set("view options", {layout: false});
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-    response.render("chat", {"PORT": PORT, "HOST": HOST})
+    response.render("chat", {"PORT": PORT, "HOST": APP_NAME})
 })
 
 app.listen(PORT, function() {
